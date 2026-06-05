@@ -1,0 +1,19 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "platform_esp32.c"
+        "input_joystick.c"
+        "st7789.c"
+        "tetris_core.c"
+        "app.c"
+        "benchmarks.c"
+        "scores.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        driver
+        esp_adc
+        esp_timer
+        esp_hw_support
+        nvs_flash
+)

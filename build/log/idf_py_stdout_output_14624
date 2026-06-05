@@ -1,0 +1,33 @@
+Command: C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.4\tools/idf_monitor.py -p COM5 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace C:\Users\norman\esp_projects\esp32-c3-supermini\tetris-game\build\tetris_game.elf C:\Users\norman\esp_projects\esp32-c3-supermini\tetris-game\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.12_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.4\tools\idf.py' '-p' 'COM5'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403836ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x1584
+load:0x403cbf10,len:0xc44
+load:0x403ce710,len:0x2ff8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5.4 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jun  5 2026 02:40:59[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (25) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (25) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (25) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (25) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (26) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (26) boot: End of partition table[0m
+[0;32mI (27) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a614h ( 42516) map[0m
+[0;32mI (34) esp_image: segment 1: paddr=0001a63c vaddr=3fc8e400 size=01a5ch (  6748) load[0m
+[0;32mI (35) esp_image: segment 2: paddr=0001c0a0 vaddr=40380000 size=03f78h ( 16248) load[0m
+[0;32mI (39) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1ef84h (126852) map[0m
+[0;32mI (59) esp_image: segment 4: paddr=0003efac vaddr=40383f78 size=0a444h ( 42052) load[0m
+[0;32mI (67) esp_image: segment 5: paddr=000493f8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (72) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (72) boot: Disabling RNG early entropy source...[0m
